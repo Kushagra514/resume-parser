@@ -1,0 +1,20 @@
+[project]
+name = "resume-parser"
+version = "0.1.0"
+description = "a tool to extract text from a resume"
+authors = [
+    {name = "Kushagra"}
+]
+license = {text = "MIT"}
+requires-python = "^3.11"
+dependencies = [
+    "fastapi (>=0.135.2,<0.136.0)",
+    "uvicorn (>=0.42.0,<0.43.0)",
+    "pymupdf (>=1.27.2.2,<2.0.0.0)",
+    "python-multipart (>=0.0.22,<0.0.23)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
