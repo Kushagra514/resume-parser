@@ -1,12 +1,20 @@
 # resume-parser
 
-A FastAPI-based REST API that extracts text, email, and phone number from uploaded PDF resumes.
+A FastAPI REST API that extracts structured information from uploaded PDF resumes.
+
+## What it does
+- Extracts full text from PDF resumes
+- Detects email and phone number using regex
+- Matches skills against a predefined skill set
+- Returns structured JSON response
 
 ## Stack
 - FastAPI
 - PyMuPDF (fitz)
 - Python 3.11
 - Poetry
+- Docker
+- Render
 
 ## Run Locally
 ```bash
@@ -22,15 +30,16 @@ poetry run uvicorn app.main:app --reload
 Upload a PDF resume and get extracted information.
 
 **Request:** multipart/form-data with a PDF file
-c
+
 **Response:**
 ```json
 {
-  "email": "example@gmail.com",
-  "phone": "9876543210",
-  "text": "full extracted text..."
+  "email": "kushagratewari.eng@gmail.com",
+  "phone": "+91-8115144257",
+  "skills": ["python", "java", "sql", "git", "machine learning"],
+  "text": "full extracted resume text..."
 }
 ```
 
-## Docs
-Visit `http://127.0.0.1:8000/docs` for Swagger UI.
+## Live Demo
+https://resume-parser-ztiy.onrender.com/docs
