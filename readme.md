@@ -22,7 +22,7 @@ poetry run uvicorn app.main:app --reload
 Upload a PDF resume and get extracted information.
 
 **Request:** multipart/form-data with a PDF file
-
+c
 **Response:**
 ```json
 {
