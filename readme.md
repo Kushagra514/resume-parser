@@ -42,5 +42,6 @@ Upload a PDF resume and get extracted information.
 ```
 
 
+
 ## Live Demo
 https://resume-parser-ztiy.onrender.com/docs
